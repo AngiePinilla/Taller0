@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 :root {
     --azulclaro: #48D6ED;
@@ -17,10 +18,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Marcellus', serif;
+}
 
 
 @media screen and (min-width: 320px) {
@@ -29,31 +37,127 @@
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
-        align-items: center;
+        flex-direction: column;
     }
+   
     nav {
         display: flex;
-        justify-content: center;
         width: 100%;
-        height: 10em;
-        flex-direction: row;
+        height: 100%;
+        flex-direction: column;
         background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
         align-items: center;
         color: var(--blanco);
-
+        margin-top: 8%;
     }
 
     nav img {
-        width: 20rem;
-        /* padding-top: 100%; */
+        width: 35%;
+        padding-top: 5%;
     }
 
     nav h1 {
-        padding: 2rem;
-        font-size: 3rem;
+        padding: 1em;
+        font-size: 3em;
+        margin-left: 1em;
         text-align: center;
         /* padding-bottom: 100%; */
     }
+
+    .dashboar {
+        background-color: rgba(255, 255, 255, 0.767);
+        margin: 3rem;
+        padding: 2rem;
+        width: 80%;
+        font-size: 1.2em;
+        border-radius: 5px;
+    }
+
+    .bienvenido {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    form {
+        width: 100%;
+        margin: 1em;
+    }
+
+    form .formulario {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .columna {
+        display: flex;
+        padding: 0 1em 0 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .columna input {
+        width: 90%;
+        padding: 0.5em;
+        margin: 0.5em 0 0.5em 0;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 0;
+    }
+
+    .columna select {
+        width: 90%;
+        padding: 0.5em;
+        margin: 0.5em 0 0.5em 0;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 0;
+    }
+
+    .genero {
+        display: flex;
+        justify-content: flex-start;
+        justify-items: center;
+        margin: 1rem 0;
+    }
+
+    .genero input {
+        width: auto;
+        padding: 0%;
+        margin: 0%;
+        margin-right: 1rem;
+    }
+
+    .genero label {
+        margin-right: 1rem;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .boton button {
+        width: 15rem;
+        color: var(--blanco);
+        background-color: var(--negro2);
+        padding: 1rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        border: 0;
+    }
+
 }
 
 
@@ -64,6 +168,7 @@
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
 
     nav {
@@ -75,18 +180,20 @@
         justify-content: center;
         flex-direction: column;
         color: var(--blanco);
+        margin-top: 0%;
     }
 
     nav img {
+        
         width: 20rem;
-        /* padding-top: 100%; */
+        padding-top: 0%;
     }
 
     nav h1 {
-        padding: 2rem;
-        margin-left: 3rem;
-        font-size: 3rem;
+        padding: 2em;
+        font-size: 3em;
         text-align: center;
+        margin-left: 0%;
         /* padding-bottom: 100%; */
     }
 
@@ -121,6 +228,7 @@
     form .formulario {
         display: flex;
         width: 100%;
+        flex-direction: row;
     }
 
     .columna {

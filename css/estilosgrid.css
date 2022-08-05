@@ -242,7 +242,6 @@ h5 {
         padding-bottom: 7%;
         padding-top: 2%;
 
-
     }
 
     .card {
@@ -656,6 +655,6 @@ h5 {
 }
 
 
-* {
+/* * {
     border: 1px solid rgb(231, 22, 22);
-}
+} */
