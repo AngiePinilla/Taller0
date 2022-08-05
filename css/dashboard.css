@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342; 
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.dash {
+    background-image: url(../img/dahboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.navbar {
+    width: 15%;
+    min-width: 280px;
+    color: var(--blanco);
+}
+
+.navbar .logo {
+    background-color: var(--azuloscuro);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .logo img {
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+.navbar .logo .name {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.navbar .menu {
+    background-color: var(--azulnegro);
+    height: 73%;
+}
+
+.navbar .menu .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .menu .item div {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar .menu .item .color {
+    background-color: var(--azuloscuro);
+}
+
+.navbar .menu .item div a {
+    text-decoration: none;
+    color: var(--blanco);
+    padding-left: 1rem;
+}
+
+.navbar .exit {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--negro2);
+}
+
+.navbar .exit a {
+    text-decoration: none;
+    color: var(--blanco);
+    padding-left: 1rem;
+}
+
+.dashboard {
+    background-color: rgba(255, 255, 255, 0.767);
+    margin: 3rem;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.dashboard .bienvenido {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.dashboard .columnas {
+    display: flex;
+    width: 100%;
+}
+
+.dashboard .columnas .foto {
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .columnas .foto .img img {
+    width: 100%;
+    height: 12rem;
+}
+
+.dashboard .columnas .foto a {
+    text-decoration: none;
+    color: var(--blanco);
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--negro);
+    font-size: 1.5rem;
+}
+
+.dashboard .columnas .foto .icon {
+    display: flex;
+    color: var(--blanco);
+    padding: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.2rem;
+    background-color: var(--azuloscuro);
+    font-size: 2rem;
+}
+
+.actualizar {
+    width: 80%;
+    margin: 1rem;
+}
+
+.actualizar .col {
+    display: flex;
+    width: 100%;
+}
+
+.actualizar .col-1 {
+    display: flex;
+    padding: 0 1rem 0 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.actualizar .col-1 input {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0;
+}
+
+.actualizar .col-1 #genero {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    margin: 1rem 0;
+}
+
+.actualizar .col-1 #genero input {
+    width: auto;
+    padding: 0%;
+    margin: 0%;
+    margin-right: 1rem;
+}
+
+.actualizar .col-1 #genero label {
+    margin-right: 1rem;
+}
+
+.botones button {
+    width: 15rem;
+    color: var(--blanco);
+    background-color: var(--negro2);
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 0;
+}
+
+.password {
+    width: 80%;
+    margin: 3rem 3rem 0.6rem 20%;
+    padding-left: 3rem;
+}
+
+.password input {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 1rem 0 0 0;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 0;
+}
+
+.password .pass {
+    display: flex;
+    width: 100%;
+}
+
+.password .pass div {
+    width: 45%;
+    margin-right: 1rem;
+}

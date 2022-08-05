@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000; 
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Marcellus', serif;
+}
+
+@media only screen and (min-width: 320px) {
+/*BARRA DE NAVEGACION MODILE*/
+
+
+.item {
+    padding: 1rem;
+}
+
+.logo {
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 40%;
+    max-width: 200px;
+}
+
+.logo i {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.menu {
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hr {
+    width: 90%;
+    border-color: var(--blanco);
+}
+
+.item {
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+
+/* nav a:hover {
+    background-color: #0B3860;
+    width: 100%;
+} */
+
+.navbar-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+
+
+/*DESCRIPCION modile*/
+
+.introduccion {
+    display: flex;
+    
+}
+
+.introduccion-parrafo {
+    padding: 1em;
+
+}
+
+
+.introduccion-logo img {
+    display: none;
+    
+}
+
+/*FIN DESCRIPCION*/
+
+/*FEATURES*/
+
+#features {
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 3rem;
+}
+
+.features-title {
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+.features-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 25%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature i {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue {
+    background-color: #00325eae;
+}
+
+.feature-black {
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
+/*END FEATURES*/
+
+/*UBICACION modile*/
+
+.ubicacion {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+
+}
+
+.mapa {
+    width: 100%;
+    height: 20em;
+}
+
+.ubicacion h2 {
+    color: var(--negro2);
+    font-size: 2em;
+
+}
+
+.direccion {
+    display: flex;
+    font-family: 'Marcellus', serif;
+    font-size: 1.5em;
+    justify-content: center;
+    line-height: 1em;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.direccion hr {
+    width: 50%;
+    border-color: var(--azuloscuro);
+    text-align: center;
+    margin-left: 25%;
+
+}
+
+/*FIN UBICACION*/
+
+
+/*TARJETAS*/
+
+.title-cards {
+    font-family: 'Marcellus', serif;
+    display: flex;
+    color: var(--blanco);
+    justify-content: center;
+    font-size: 2.1em;
+    background-color: var(--negro);
+    padding-bottom: 7%;
+    padding-top: 2%;
+
+
+}
+
+.card {
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: -4.5%;
+    margin-bottom: 5%;
+    left: 3%;
+    background-color: var(--degradado);
+
+}
+
+
+.card__perfil {
+    width: 90%;
+    padding: 3%;
+    background-image: url(../img/Group\ 200.svg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+
+.card__nombre img {
+    width: 22%;
+    color: var(--blanco);
+    margin-left: -75%;
+    border-radius: 50%;
+}
+
+.card__descripcion p {
+    color: var(--blanco);
+
+}
+
+.card__nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.nombre {
+    
+    color: var(--blanco);
+    font-family: 'Playfair Display', serif;
+    top: -30%;
+    
+}
+
+.icon {
+    padding: 1%;
+    font-size: 150%;
+}
+
+
+.icon1 {
+    color: var(--Magenta);
+    font-size: 150%;
+    padding: 1%;
+}
+
+
+.elements1 {
+    text-align: center;
+    align-self: flex-end;
+
+
+}
+
+.quadrate1 {
+    cursor: pointer;
+    height: 10px;
+    width: 55px;
+    margin: 0 2px;
+    background-color: var(--negro);
+    display: inline-block;
+    transition: 0.6s ease;
+    border-radius: 1px;
+}
+
+/*FIN TARJETAS*/
+
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    margin-top: 2em;
+    background-color: var(--negro);
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    padding: 5px 0;
+
+}
+article hr{
+    display: flex;
+    border-color: var(--blanco);
+    background-color: #fff;
+}
+
+footer article {
+    width: 100%;
+    color: #ffff;
+    padding: 0 10px;
+}
+
+.iconos2 i {
+    padding-left: 1em;
+    font-size: 150%;
+    color: #fff;
+}
+
+.iconos {
+    display: none;
+}
+
+.footer-direccion {
+    padding: 1em 0;
+
+}
+
+.footer-direccion i {
+    font-size: 120%;
+
+}
+
+.politicas p {
+    padding: 1em;
+}
+
+/*FOOTER*/
+
+}
+
+/*Resolución tablet*/
+@media screen and (min-width: 768px) {
+    .feature {
+        width: 50%;
+    }
+}
+
+
+/*DESKTOP---------------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+
+    /*BARRA DE NAVEGACION DESKTOP*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+    }
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .logo i {
+        display: none;
+    }
+
+    .menu {
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-hr {
+        display: none;
+    }
+
+    .navbar-button {
+        background-color: var(--azuloscuro);
+    }
+
+    /*FIN BARRA*/
+
+    /*DESCRIPCION DESKTOP*/
+    .introduccion {
+        display: flex;
+        padding: 2em;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .introduccion-parrafo {
+        padding: 25px;
+        width: 50em;
+    }
+
+
+    .introduccion-logo img {
+        display: flex;
+        align-items: center;
+        width: 240px;
+        height: 240px;
+    }
+
+    /*FIN DESCRIPCION*/
+
+    /*MAPA DESKTOP*/
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+        text-align: center;
+
+    }
+
+    .mapa {
+        width: 100%;
+        height: 35em;
+    }
+
+    .ubicacion h2 {
+        color: var(--negro2);
+        font-size: 3em;
+        padding: 1em;
+    }
+
+    .direccion {
+        display: flex;
+        font-family: 'Marcellus', serif;
+        font-size: 2em;
+        justify-content: center;
+        line-height: 2em;
+        flex-direction: column;
+    }
+
+    .direccion hr {
+        width: 50%;
+        border-color: var(--azuloscuro);
+        text-align: center;
+        margin-left: 25%;
+
+    }
+
+    /*FIN MAPA*/
+
+        /*TARJETAS*/
+    
+        .title-cards {
+            font-family: 'Marcellus', serif;
+            display: flex;
+            color: var(--blanco);
+            justify-content: center;
+            font-size: 2.1em;
+            background-color: var(--negro);
+            padding-bottom: 7%;
+            padding-top: 2%;
+    
+    
+        }
+    
+        .card {
+            position: relative;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-direction: row;
+            margin-top: -4.5%;
+            margin-bottom: 5%;
+            left: 3%;
+            background-color: var(--degradado);
+    
+        }
+    
+    
+        .card__perfil {
+            width: 32%;
+            padding: 2%;
+            background-image: url(../img/Group\ 200.svg);
+            background-size: cover;
+            border-radius: 3px;
+        }
+    
+    
+        .card__nombre img {
+            width: 22%;
+            color: var(--blanco);
+            margin-left: -75%;
+            border-radius: 50%;
+        }
+    
+        .card__descripcion p {
+            color: var(--blanco);
+    
+        }
+    
+        .card__nombre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+    
+        .nombre {
+            align-self: baseline;
+            color: var(--blanco);
+            font-family: 'Playfair Display', serif;
+            
+            left: 30%;
+        }
+    
+        .icon {
+            padding: 1%;
+            font-size: 150%;
+        }
+    
+    
+        .icon1 {
+            color: var(--Magenta);
+            font-size: 150%;
+            padding: 1%;
+        }
+    
+    
+        .elements1 {
+            text-align: center;
+    
+    
+    
+        }
+    
+        .quadrate1 {
+            cursor: pointer;
+            height: 10px;
+            width: 55px;
+            margin: 0 2px;
+            background-color: var(--negro);
+            display: inline-block;
+            transition: 0.6s ease;
+            border-radius: 1px;
+        }
+    
+        /*FIN TARJETAS*/
+
+    /*footer desktop*/
+
+    footer {
+        display: flex;
+        margin-top: 2em;
+        background-color: var(--negro);
+        justify-content: space-around;
+        align-items: baseline;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+
+    }
+
+    footer article {
+        width: 50%;
+        color: #ffff;
+        padding: 0 1em;
+    }
+
+    footer hr {
+        display: none;
+    }
+
+    .iconos2 {
+        display: none;
+    }
+
+    .iconos i {
+        
+        padding: 1em;
+        font-size: 150%;
+    }
+
+    .iconos{
+        display: flex;
+    }
+
+    .footer-direccion {
+        display: flex;
+        flex-direction: row;
+        padding: 1em 0;
+
+    }
+
+    
+
+    /* .footer-direccion i {
+        font-size: 120%;
+        padding-right: 2px;
+
+    } */
+
+
+    .politicas p {
+        padding: 1em;
+        
+    }
+
+    
+
+    /*fin footer*/
+}
+
+
+/*Resolución notebooks*/
+@media screen and (min-width: 1308px) {
+    #descripcion {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*FIN BARRA DE NAVEGACION*/
