@@ -12,13 +12,13 @@
     <title>register</title>
 </head>
 
-<body class="dash">
+<body class="dash"> 
     <nav class="slider">
         <img src="img/Hotelia horizontal blanco.svg">
         <h1>Eres más que bienvenido</h1>
     </nav>
-    <div class="dashboar"> 
-        <div class="bienvenido"> 
+    <div class="dashboar">
+        <div class="registrate">
             <h1>Registrate</h1>
         </div>
 
@@ -76,9 +76,10 @@
                         <label for="telefono">Telefono</label>
                         <input type="number" name="telefono" id="telefono">
                     </div>
-                    <div>
+                    <div class="foto">
                         <label>Foto</label>
-                        <input type="file" id="foto">
+                        <input type="file" id="archivo">
+                        <label for="archivo" id="archivo">Selecionar Archivo</label>
                     </div>
                     <div>
                         <label>Confirmar contraseña</label>
@@ -86,13 +87,40 @@
                     </div>
                 </div>
             </div>
-            <div class="boton">
-                <div>
-                    <input type="checkbox">
-                    <label>Acepta Terminos y Condiciones</label>
-                </div>
-                <a href="Login.html"><button type="submit">Ingresar</button></a>
 
+            <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal">Terminos y condiciones</label>
+
+            <div class="boton">
+                <a href="Login.html">Ingresar</a>
+            </div>
+
+            <!-- <input type="checkbox" id="btn-modal">
+            <label for="btn-modal" class="lbl-modal">Abrir Modal</label> -->
+            <div class="modal">
+                <div class="contenedor">
+                    <header>Terminos y Condiciones</header>
+                    <label for="btn-modal">X</label>
+                    <div class="contenido">
+                        <h3>
+                            <!-- Agregar un titulo -->
+                        </h3>
+                        <p>
+                            Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las leyes por las que nos regimos y
+                            determinados aspectos que siempre hemos creido que son ciertos. Por ello, estos Términos del Servicio ayudan a definir
+                            la relación que tiene Google contigo cuando interactúas con nuestros servicios, Por ejemplo, estos términos incluyen las
+                            siguientes secciones:
+                        </p>
+                        <p>    
+                            Qué puedes esperar de nosotros, donde se describe como proporcionamos y desarrollamos nuestros servicios. Lo que
+                            esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios.
+                        </p>
+
+                        <button>Aceptar</button>
+                    </div>
+         
+                    
+                </div>
             </div>
         </form>
 

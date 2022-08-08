@@ -1,20 +1,19 @@
-function openTab(evt, paso) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+const menu = document.querySelector('.menu');
+const hamburguer = document.querySelector('.hamburguer');
+hamburguer.onclick = () => {
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+    for (let i = 0; i < menu.classList.length; i++) {
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+        const menuClass = menu.classList[i]
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(paso).style.display = "block";
-    evt.currentTarget.className += " active";
+        if (menuClass === "ocultar") {
+            menu.classList.remove('ocultar')
+            menu.classList.add('open')
+
+        } else if (menuClass === "open") {
+            menu.classList.remove('open')
+            menu.classList.add('ocultar')
+        }
+
     }
+}
