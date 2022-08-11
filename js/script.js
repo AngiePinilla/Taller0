@@ -4,7 +4,7 @@ hamburguer.onclick = () => {
 
     for (let i = 0; i < menu.classList.length; i++) {
 
-        const menuClass = menu.classList[i]
+        const menuClass = menu.classList[i] 
 
         if (menuClass === "ocultar") {
             menu.classList.remove('ocultar')
