@@ -43,12 +43,12 @@ h5 {
             "nav" auto
             "banner" auto
             "descripcion" auto
-            "feature" auto
+            "feature2" auto
             "ubicacion" auto
-            "opinion" auto
+            "opinion2" auto
             "footer" auto
     }
-
+    /*BARRA DE NAVEGACION*/
     nav {
         grid-area: nav;
         display: grid;
@@ -136,7 +136,7 @@ h5 {
 
 
 
-    /*---------------------CARRUCEL---------------*/
+    /*CARRUSEL*/
 
     .carrusel {
         margin-top: 5.5em;
@@ -212,19 +212,18 @@ h5 {
         background-color: rgba(0, 0, 0, 0.59);
     }
 
-    /*END FEATURES*/
+   
 
     /*UBICACION*/
 
-    .location {
-
+    .ubicacion {
         padding: 1em;
         display: grid;
         align-items: center;
         text-align: center;
     }
 
-    .location-text hr {
+    .ubicacion-text hr {
         border-color: #0B3860;
         width: 50%;
         margin-left: 8em;
@@ -235,20 +234,20 @@ h5 {
         height: 20em;
     }
 
-    .location-text p {
+    .ubicacion-text p {
         font-size: 1.2em;
     }
 
-    .location-text {
+    .ubicacion-text {
         margin-top: 1em;
     }
 
-    .location-text hr {
+    .ubicacion-text hr {
         margin-left: 13%;
         width: 80%;
     }
 
-    /*CARRUSEL*/
+    /*TARJETAS*/
 
     .tarjeta {
         margin: 1em;
@@ -256,7 +255,6 @@ h5 {
         height: 16em;
         background: var(--degradado);
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
         color: var(--fondo);
         border-radius: 5px;
@@ -327,17 +325,16 @@ h5 {
         display: flex;
         padding-bottom: 20%;
         flex-direction: column;
-        align-items: flex-start;
         width: 100%;
         height: 50%;
     }
 
-    /*FIN TARJETAS*/
+    
 
 
-    /*------------------------------FOOTER-------------------------------*/
+    /*FOOTER*/
 
-    .footer-section {
+    .footer {
         display: flex;
         margin-top: 2em;
         background-color: var(--negro);
@@ -347,20 +344,20 @@ h5 {
         padding: 5px 0;
     }
 
-    .footer-section article {
+    .footer article {
         width: 95%;
         color: var(--blanco);
         padding: 0 10px;
     }
 
 
-    .footer-section p {
+    .footer p {
         margin: 10px;
         font-size: 16px;
 
     }
 
-    .footer-section hr {
+    .footer hr {
         width: 90%;
         margin-left: 1em;
         margin-top: 1em;
@@ -374,29 +371,30 @@ h5 {
         color: var(--blanco);
     }
 
-    .icons {
-        display: none;
-    }
-
-    .footer-direction {
+    .footer-direccion {
+        display: flex;
         padding: 1em 0;
         margin-left: 1.5em;
         font-size: 16px;
     }
 
-    .footer-cellphone {
-
+    .footer-telefono {
         margin-left: 1.5em;
+        margin-top: 1em;
         font-size: 16px;
     }
 
-    .footer-policies {
+    .footer-politicas {
         display: flex;
         margin-left: 30px;
         font-size: 16px;
     }
 
-    .icons-two {
+    .icons {
+        display: none;
+    }
+
+    .icons2 {
         display: flex;
         justify-content: space-around;
         margin: 1em;
@@ -409,6 +407,8 @@ h5 {
 
 /*Resolución tabletas*/
 @media screen and (min-width:768px) {
+
+    /*BARRA DE NAVEGACION*/
     nav {
         background-color: var(--negro2);
         grid-template-columns: 200px auto;
@@ -472,6 +472,8 @@ h5 {
             "footer" auto
     }
 
+    /*BARRA DE NAVEGACION*/
+
     nav {
         background-color: var(--negro2);
         grid-template-columns: 200px auto;
@@ -518,19 +520,19 @@ h5 {
         align-self: center;
     }
 
-    /*Carrusel*/
+    /*CARRUSEL*/
 
-        .texto-carrusel {
-            text-align: left;
-            color: var(--blanco);
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 100%;
-            height: 7em;
-            margin-left: -100px;
-            background-color: rgba(51, 51, 51, 0.524);
-        }
+    .texto-carrusel {
+        text-align: left;
+        color: var(--blanco);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 7em;
+        margin-left: -100px;
+        background-color: rgba(51, 51, 51, 0.524);
+    }
 
 
     /*DESCRIPCION*/
@@ -558,7 +560,6 @@ h5 {
 
     .img-desc img {
         width: 75%;
-
     }
 
 
@@ -582,6 +583,7 @@ h5 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding-top: 1.5em;
     }
 
     .feature {
@@ -615,18 +617,17 @@ h5 {
     }
 
 
-    /*MAPA*/
+    /*UBICACION*/
 
-    .location {
+    .ubicacion {
         display: flex;
-        position: relative;
         flex-direction: column;
         justify-content: center;
         padding: 2em;
         text-align: center;
     }
 
-    .location-tittle {
+    .ubicacion-tittle {
         color: var(--negro2);
         font-size: 3em;
         padding: 1em;
@@ -637,7 +638,7 @@ h5 {
         height: 35em;
     }
 
-    .location-text {
+    .ubicacion-text {
         display: flex;
         font-family: 'Marcellus', serif;
         font-size: 2em;
@@ -646,17 +647,16 @@ h5 {
         flex-direction: column;
     }
 
-    .location-text hr {
+    .ubicacion-text hr {
         width: 70%;
         border-color: var(--azuloscuro);
         margin-left: 15%;
     }
 
-    /*---CARDS--*/
+
 
     /*TARJETAS*/
 
-    /* opiniones */
     .tarjeta {
         margin: 1em;
         width: 50%;
@@ -735,37 +735,18 @@ h5 {
         padding-bottom: 20%;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
         width: 100%;
         height: 50%;
     }
 
 
+    /*FOOTER*/
 
-    /*FIN TARJETAS*/
 
-    /*-----FOOTER-----------*/
-
-    .container-lines {
-        text-align: center;
-    }
-
-    .lines {
-        cursor: pointer;
-        height: 10px;
-        width: 55px;
-        margin: 0 2px;
-        background-color: var(--negro2);
-        display: inline-block;
-        transition: 0.6s ease;
-        border-radius: 1px;
-    }
-
-    .footer-section {
+    .footer {
         display: flex;
         margin-top: 2em;
         background-color: var(--negro);
-        justify-content: space-around;
         align-items: baseline;
         flex-direction: row;
         width: 100%;
@@ -773,14 +754,14 @@ h5 {
         padding: 0px;
     }
 
-    .footer-section article {
+    .footer article {
         width: 50%;
         color: var(--blanco);
         padding: 0 1em;
         margin: 25px;
     }
 
-    .footer-section hr {
+    .footer hr {
         display: none;
     }
 
@@ -788,7 +769,7 @@ h5 {
         display: flex;
     }
 
-    .icons-two {
+    .icons2 {
         display: none;
     }
 
@@ -797,13 +778,14 @@ h5 {
         font-size: 150%;
     }
 
-    .footer-direction {
-        display: flex;
+    .footer-direccion {
+
         flex-direction: row;
         padding: 1em 0;
     }
 
-    .footer-policies {
+
+    .footer-politicas {
         padding: 1em;
         display: flex;
         flex-direction: column;

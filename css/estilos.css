@@ -116,11 +116,11 @@ h5 {
     }
 
     .ocultar {
-        transform: translateX(100em);
+        transform: translateY(-100em);
     }
 
     .open {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     /*CARRUSEL*/
@@ -250,8 +250,8 @@ h5 {
 
     .tarjeta {
         margin: 1em;
-        width: 25em;
-        height: 16em;
+        /* width: 0;
+        height: 0; */
         background: var(--degradado);
         display: flex;
         align-items: flex-start;
@@ -312,6 +312,7 @@ h5 {
         justify-content: center;
         padding-bottom: 1em;
         text-align: center;
+        width: inherit;
     }
 
     .opiniones {
@@ -320,6 +321,7 @@ h5 {
         justify-content: center;
         flex-direction: column;
         height: 60em;
+        margin-top: 5em;
     }
 
     .opinion {
@@ -372,12 +374,18 @@ h5 {
 
     .footer-direccion {
         padding: 1em 0;
+        display: flex;
 
     }
 
     .footer-direccion i {
         font-size: 120%;
 
+    }
+
+    .politicas{
+        display:flex;
+        flex-direction: row;
     }
 
     .politicas p {
@@ -585,7 +593,7 @@ h5 {
     /* opiniones */
     .tarjeta {
         margin: 1em;
-        width: 25em;
+        width: 50%;
         height: 16em;
         background: var(--degradado);
         display: flex;
@@ -654,6 +662,7 @@ h5 {
         flex-direction: row;
         height: 6em;
         background-color: var(--negro);
+        margin-top: 0;
     }
 
     .opinion {
@@ -718,6 +727,11 @@ h5 {
         flex-direction: row;
         padding: 1em 0;
 
+    }
+
+    .politicas{
+        display: flex;
+        flex-direction: column;
     }
 
 
